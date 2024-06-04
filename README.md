@@ -17,22 +17,103 @@ Quando acabares, carrega no botão "Commit Changes".
 
     Nome: ...
 
-## Considera a seguinte enumeração: (6v)
+## P1 - Para as seguintes questões, assinala a opção correta: (4v)
 
-```cs
-enum Monstro { Troll, Ogre, Elfo, Demónio, Vampiro, Lobisomem, Minion }
-```
+1. Qual das seguintes expressões LINQ é usada para selecionar apenas os elementos que satisfazem uma condição específica?
 
-Realiza as seguintes instruções:
-
-1. Declara uma lista de `Monstro` e adiciona-lhe 3 elementos distintos da enumeração. (6v)
+    a) select
+   
+    b) where
+   
+    c) group by
+   
+    d) order by
 
         Resposta: ...
     
-2. Considera a variável `m`do tipo `Monstro`. Escreve uma linha de código onde atribuis a esta variável o valor do primeiro elemento da lista da instrução anterior. (4v)
+2. Qual das seguintes palavras-chave LINQ é usada para ordenar os resultados?
+   
+    a) select
+
+    b) orderby
+   
+    c) group
+   
+    d) where
 
         Resposta: ...
    
-3. Escreve o código de um método que recebe a lista da primeira instrução, e devolve um inteiro indicando quantos elementos existem na lista. O método deve fazer uso de LINQ. (10v)
+3. Que expressão LINQ é usada para projetar dados numa nova forma?
+
+    a) where
+   
+    b) select
+   
+    c) orderby
+   
+    d) group
 
         Resposta: ...
+
+4. Qual método de extensão é usado em LINQ para contar o número de elementos numa coleção?
+
+    a) Count()
+   
+    b) Sum()
+   
+    c) Average()
+   
+    d) Max()
+
+       Resposta: ...
+
+## P2 - Indica, justificando, se as seguintes afirmações são verdadeiras ou falsas: (6v)
+
+1. O método Select em LINQ é usado para filtrar elementos de uma coleção.
+
+        Resposta: ...
+
+2. O método OrderBy em LINQ ordena os elementos de uma coleção em ordem decrescente.
+
+        Resposta: ...
+
+3. Em LINQ, o método Any() verifica se qualquer elemento em uma coleção satisfaz uma condição específica.
+
+        Resposta: ...
+
+## P3 - Resolve os seguintes exercícios de desenvolvimento de código: (8v)
+
+1. Considera a seguinte lista de produtos:
+
+        public class Produto
+        {
+            public int Id { get; set; }
+            public string Nome { get; set; }
+            public double Preco { get; set; }
+        }
+        
+        List<Produto> produtos = new List<Produto>
+        {
+            new Produto { Id = 1, Nome = "Produto A", Preco = 45.0 },
+            new Produto { Id = 2, Nome = "Produto B", Preco = 60.0 },
+            new Produto { Id = 3, Nome = "Produto C", Preco = 70.0 },
+            new Produto { Id = 4, Nome = "Produto D", Preco = 30.0 }
+        };
+
+Escreve uma expressão LINQ para selecionar apenas os produtos cujo preço é maior que 50.
+
+        Resposta: ...
+
+2. Considera a seguinte lista de pessoas:
+
+       List<Pessoa> pessoas = new List<Pessoa>
+        {
+            new Pessoa { Nome = "Ana", Idade = 25 },
+            new Pessoa { Nome = "João", Idade = 30 },
+            new Pessoa { Nome = "Maria", Idade = 28 },
+            new Pessoa { Nome = "Pedro", Idade = 35 }
+        };
+
+   Usa LINQ para calcular a média das idades, e guarda o resultado numa variável apropriada.
+
+       Resposta: ...
