@@ -100,7 +100,7 @@ Quando acabares, carrega no botão "Commit Changes".
             new Produto { Id = 4, Nome = "Produto D", Preco = 30.0 }
         };
 
-Escreve uma expressão LINQ para selecionar apenas os produtos cujo preço é maior que 50.
+    Escreve uma expressão LINQ para selecionar apenas os produtos cujo preço é maior que 50.
 
         Resposta: ...
 
