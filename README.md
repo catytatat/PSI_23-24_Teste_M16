@@ -15,7 +15,7 @@ Quando acabares, carrega no botão "Commit Changes".
 
 ## Informação do aluno
 
-    Nome: ...
+    Nome: Catarina Feliciano Cachoeira
 
 ## P1 - Para as seguintes questões, assinala a opção correta: (4v)
 
@@ -29,7 +29,7 @@ Quando acabares, carrega no botão "Commit Changes".
    
     d) order by
 
-        Resposta: ...
+        Resposta: B
     
 2. Qual das seguintes palavras-chave LINQ é usada para ordenar os resultados?
    
@@ -41,7 +41,7 @@ Quando acabares, carrega no botão "Commit Changes".
    
     d) where
 
-        Resposta: ...
+        Resposta: B
    
 3. Que expressão LINQ é usada para projetar dados numa nova forma?
 
@@ -53,7 +53,7 @@ Quando acabares, carrega no botão "Commit Changes".
    
     d) group
 
-        Resposta: ...
+        Resposta: B
 
 4. Qual método de extensão é usado em LINQ para contar o número de elementos numa coleção?
 
@@ -65,21 +65,22 @@ Quando acabares, carrega no botão "Commit Changes".
    
     d) Max()
 
-       Resposta: ...
+       Resposta: A
 
 ## P2 - Indica, justificando, se as seguintes afirmações são verdadeiras ou falsas: (6v)
 
 1. O método Select em LINQ é usado para filtrar elementos de uma coleção.
 
-        Resposta: ...
+        Resposta: Falso, o método select é usado para projetar dados de uma nova forma.
 
 2. O método OrderBy em LINQ ordena os elementos de uma coleção em ordem decrescente.
 
-        Resposta: ...
+        Resposta: Falso, o méteodo Orderby ordena sempre em ordem crescente.
 
 3. Em LINQ, o método Any() verifica se qualquer elemento em uma coleção satisfaz uma condição específica.
 
-        Resposta: ...
+        Resposta: Verdadeiro, o método Any() verifica se qualquer elemento em uma coleção satisfaz uma condição específica.
+
 
 ## P3 - Resolve os seguintes exercícios de desenvolvimento de código: (8v)
 
@@ -102,7 +103,8 @@ Quando acabares, carrega no botão "Commit Changes".
 
     Escreve uma expressão LINQ para selecionar apenas os produtos cujo preço é maior que 50.
 
-        Resposta: ...
+        Resposta: var produtosCaros = produtos.Where(p => p.Preco > 50).ToList();
+
 
 2. Considera a seguinte lista de pessoas:
 
@@ -116,4 +118,5 @@ Quando acabares, carrega no botão "Commit Changes".
 
    Usa LINQ para calcular a média das idades, e guarda o resultado numa variável apropriada.
 
-       Resposta: ...
+       Resposta: double mediaIdades = pessoas.Avarage(p => p.Idade);
+                 Console.Writeline($" A média das idades é: {mediaIdades}");
